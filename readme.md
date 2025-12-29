@@ -1,29 +1,52 @@
+# 📈 TCS Stock Price Prediction using Machine Learning & LSTM
+
+This project focuses on predicting **Tata Consultancy Services (TCS)** stock **closing prices** using multiple machine learning models, with a primary emphasis on **Long Short-Term Memory (LSTM)** neural networks for time-series forecasting.
 
 ---
 
-## 📝 Key Learnings
-- Stock prices are **highly autocorrelated**
-- Traditional ML models rely on **explicit or implicit historical features**
-- **LSTM outperforms classical models** by learning temporal dependencies internally
-- Feature leakage can artificially inflate performance metrics
+## 🚀 Project Objectives
+- Perform **Exploratory Data Analysis (EDA)** on historical TCS stock data
+- Apply **feature engineering** for time-series modeling
+- Build and compare multiple prediction models
+- Evaluate model performance using standard regression metrics
 
 ---
 
-## 🔮 Future Scope
-- Add **XGBoost / LightGBM**
-- Multivariate LSTM (volume, indicators, macro data)
-- Hyperparameter tuning
-- Deployment using Streamlit or Flask
-- Real-time stock prediction pipeline
+## 🧠 Models Implemented
+- **Linear Regression (with lag features)**
+- **Linear Regression (without lag features)**
+- **Random Forest Regressor**
+- **LSTM (Deep Learning – TensorFlow/Keras)**
 
 ---
 
-## 👤 Author
-**Md Arkam**  
-Master of Pharmacy (M.Pharm)  
-Machine Learning & Data Analytics Enthusiast  
+## 🛠️ Technologies & Tools
+- **Python**
+- **TensorFlow / Keras**
+- **Scikit-learn**
+- **Pandas, NumPy**
+- **Matplotlib, Seaborn**
+- **Jupyter Notebook**
+- **VS Code**
+- **Git & GitHub**
 
 ---
 
-## ⭐ Acknowledgment
-This project was developed for **academic learning and research purposes**, demonstrating practical applications of machine learning and deep learning in financial time-series forecasting.
+## 📊 Evaluation Metrics
+Models were evaluated using:
+- **Mean Absolute Error (MAE)**
+- **Root Mean Squared Error (RMSE)**
+- **R² Score**
+
+### Sample Results
+| Model | RMSE (INR) | R² Score |
+|------|-----------|----------|
+| LSTM | ~131.9 | ~0.95 |
+| Random Forest | Competitive | High |
+| Linear Regression | Near-perfect (with leakage) | ~1.0 |
+
+> ⚠️ Note: Linear Regression achieved very high accuracy due to implicit temporal information in engineered features, demonstrating the importance of handling data leakage in time-series models.
+
+---
+
+## 📂 Project Structure
